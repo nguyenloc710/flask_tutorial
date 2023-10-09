@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+</head>
+<body>
+    {% for x in range(10) %}
+        {% if x % 3 == 0 %}
+            <h2 style="color: aqua">{{x}}</h2>
+        {% endif%}
+    {% endfor%}
+    {% for x in cars %}
+        <h2> style="color: aqua">{{x}}</h2>
+    {% endfor%}
+    <h1 style="color: brown">HELLO WORLD {{content}}</h1>
+</body>
+</html>
